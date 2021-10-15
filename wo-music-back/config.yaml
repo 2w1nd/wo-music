@@ -1,0 +1,13 @@
+redis:
+  db: 0
+  addr: '127.0.0.1:6379'
+  password: ''
+
+mysql:
+  path: 127.0.0.1
+  config: ''
+  db-name: wo-music
+  username: root
+  password: 123456
+  max-idle-conns: 10
+  max-open-conns: 100
