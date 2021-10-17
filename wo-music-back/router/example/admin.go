@@ -12,6 +12,8 @@ func (e *AdminRouter) InitAdminRouter(Router *gin.RouterGroup) {
 	adminRouter := Router.Group("admin")
 	var adminApi = v1.ApiGroupApp.ApiGroup.AdminApi
 	{
-		adminRouter.POST("admin", adminApi.CreateAdmin) // 创建管理员
+		adminRouter.POST("admin", adminApi.CreateAdmin)   // 创建管理员
+		adminRouter.DELETE("admin", adminApi.DeleteAdmin) // 删除管理员
+		adminRouter.PUT("admin", adminApi.UpdateAdmin)    // 更新管理员
 	}
 }
