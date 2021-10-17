@@ -12,5 +12,6 @@ func main()  {
 	if global.DB != nil {
 		initialize.MysqlTables(global.DB) // 初始化表
 	}
+	core.RunWindowsServer()
 }
 
